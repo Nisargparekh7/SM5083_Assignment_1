@@ -47,16 +47,42 @@ $$ is~~  \frac{4ab~\sin(\theta-\phi)\sin(\phi-\gamma)\sin(\gamma-\phi)}{\sin2\th
 \section*{\textbf{Solution}}
 \noindent
 $$ x_1=a\tan\theta,~x_2=a\tan\phi,~x_3=a\tan\gamma,$$
-$$y_1=b\cot\theta,~y_2=b\cot\phi,~y_3=b\cot\gamma$$ area~ of ~triangle=~$\frac{1}{2}$~\begin{vmatrix}
+$$y_1=b\cot\theta,~y_2=b\cot\phi,~y_3=b\cot\gamma$$ area~ of ~triangle=~$\frac{1}{2}$\vspace{0.3cm}~\begin{vmatrix}
  x_{1} & y_{1} & 1  \\ 
  x_{2} & y_{2} & 1  \\
  x_{3} & y_{3} & 1 
+\end{vmatrix}\\
+=~$\frac{1}{2}$\vspace{0.3cm}~\begin{vmatrix}
+ a\tan\theta & b\cot\theta & 1  \\ 
+ a\tan\phi & b\cot\phi & 1  \\
+ a\tan\gamma & b\cot\gamma & 1 
 \end{vmatrix}
-$$\frac{1}{2}[x1(y2-y3)+x2(y3-y1)+x3(y1-y2)]$$
+
+\\ \vspace{0.3cm}
+=~$\frac{1}{2}$~\begin{vmatrix}
+ a\tan\theta & b\cot\theta & 1  \\ 
+ a\tan\phi-a\tan\theta & b\cot\phi-b\cot\theta & 0  \\
+ a\tan\gamma-a\tan\theta & b\cot\gamma-b\cot\theta & 0 
+\end{vmatrix}
+\begin{flushright}
+$\because R2=R2-R1 ~and~ R3=R3-R1$
+\end{flushright}
+\vspace{0.3cm}
+\begin{multline*}
+   \therefore \frac{1}{2} (a\tan\phi-a\tan\theta *b\cot\gamma-b\cot\theta)~-\\(a\tan\gamma-a\tan\theta*b\cot\phi-b\cot\theta)
+\end{multline*}
+\begin{flushright}
+$\because  solving~determinant $
+\end{flushright}
+\\
 \vspace{0.2cm}
- area~ of ~triangle=$$\frac{1}{2}[a\tan\theta(b\cot\phi-b\cot\gamma)+a\tan\phi(b\cot\gamma-b\cot\theta)$$$$+a\tan\gamma(b\cot\theta-b\cot\phi)]$$
+$$\therefore\frac{1}{2}[a\tan\theta(b\cot\phi-b\cot\gamma)+a\tan\phi(b\cot\gamma-b\cot\theta)$$$$+a\tan\gamma(b\cot\theta-b\cot\phi)]$$
+
+\begin{flushright}
+$\because  solving~above~equation $
+\end{flushright}
 \vspace{0.2cm}
-$$ LHS = \frac{ab}{2}[\left(\tan\theta*\cot\phi -\tan\theta*\cot\gamma\right)+$$$$ \left(\tan\phi*\cot\gamma -\tan\phi*\cot\theta\right) + $$$$\left(\tan\gamma*\cot\theta -\tan\gamma*\cot\phi\right)]$$ 
+$$ \therefore \frac{ab}{2}[\left(\tan\theta*\cot\phi -\tan\theta*\cot\gamma\right)+$$$$ \left(\tan\phi*\cot\gamma -\tan\phi*\cot\theta\right) + $$$$\left(\tan\gamma*\cot\theta -\tan\gamma*\cot\phi\right)]$$ 
 \begin{flushright}
 $ \because$ taking~``ab" ~as ~common
 \end{flushright}
@@ -88,7 +114,7 @@ $\because$ representing tan and cot in sin and cos form\end{flushright} `
 \begin{flushright}
 $\because$ multiplying and  dividing each term with 4$\sin X \cos X \sin2X$
 \end{flushright}
-\vspace{0.8cm}
+\vspace{0.3cm}
 \begin{multline*}
         \therefore \frac{4ab}{2}[ 
         (\frac{\sin2\gamma* \left( \sin\theta*\cos\phi \right)^2 -\sin2\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\ph*\sin\2\theta*\sin\2\gamma}) \\ +
@@ -99,23 +125,21 @@ $\because$ multiplying and  dividing each term with 4$\sin X \cos X \sin2X$
 \begin{flushright}
 $\because$ ~simplifying ~above ~equation
 \end{flushright}
+\vspace{0.1cm}
+\begin{multline*}
 
-\vspace{0.8cm}
-
-        $\therefore \frac{4ab}{2}[ ~
-        (\frac{2\sin\gamma\cos\gamma* \left( \sin\theta*\cos\phi \right)^2 $\\ $-2\sin\phi\cos\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )$ +\vspace{0.3cm}\\
-        $ (\frac{2\sin\theta\cos\theta* \left( \sin\phi*\cos\gamma \right)^2 -2\sin\gamma\cos\gamma* \left( \sin\phi*\cos\theta \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} ) +\vspace{0.3cm}\\
+        \therefore \frac{4ab}{2}[ ~
+        (\frac{2\sin\gamma\cos\gamma* \left( \sin\theta*\cos\phi \right)^2 \\ -2\sin\phi\cos\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )\\ +
+         (\frac{2\sin\theta\cos\theta* \left( \sin\phi*\cos\gamma \right)^2 -2\sin\gamma\cos\gamma* \left( \sin\phi*\cos\theta \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} ) +\\
         (\frac{2\sin\phi\cos\phi* \left( \sin\theta*\cos\phi \right)^2 -2\sin\theta\cos\theta* \left( \sin\gamma*\cos\phi \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma})
-       ~ ]$ \\
+       ] 
+\end{multline*}
 \begin{flushright}
 $\because \sin2\theta  = 2\sin\theta\cos\theta$
 \end{flushright}
-\vspace{0.8cm}
 
 \bibliographystyle{IEEEtran}
-
 \noindent
-
 \begin{multline*}
         \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}[ \\ 
         (~\sin\gamma\cos\gamma* \left( \sin\theta*\cos\phi \right)^2 \\-\sin\phi\cos\phi* \left( \sin\theta*\cos\gamma \right)^2~)\\+   
@@ -125,10 +149,10 @@ $\because \sin2\theta  = 2\sin\theta\cos\theta$
         ]
 \end{multline*}
 \begin{flushright}
-$\because ~adding ~and ~ subtracting \sin\theta*\cos\theta\\*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma $
+$\because ~adding ~and ~ subtracting \sin\theta*\cos\theta*\\*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma $
 \end{flushright}
 
-\vspace{0.8cm}
+\vspace{0.3cm}
 \begin{multline*}
         \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}[ \\
         \sin\theta*\cos\theta*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma \\-\sin\gamma\cos\gamma* \left( \sin\phi*\cos\theta \right)^2-
@@ -139,7 +163,7 @@ $\because ~adding ~and ~ subtracting \sin\theta*\cos\theta\\*\sin\phi*\cos\phi*\
 \begin{flushright}
 $\because ~rearranging ~terms$
 \end{flushright}
-\vspace{0.8cm}
+\vspace{0.3cm}
 \begin{multline*}
     \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
     [\\ 
@@ -151,10 +175,10 @@ $\because ~rearranging ~terms$
 $\because taking~ common ~\sin\gamma\cos\theta ~and~ \sin\theta\cos\gamma$
 \end{flushright}
 
-\vspace{0.8cm}
+\vspace{0.3cm}
 \begin{multline*}
         \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
-        [\\  (\sin\gamma\cos\theta - \sin\theta\cos\gamma)* (~ \sin\phi\cos\gamma \left( \sin\theta\cos\phi -\cos\theta\sin\phi  \right)\\ - \cos\phi\sin\gamma\left( \sin\theta\cos\phi -\cos\theta\sin\phi  \right)~ )~
+        [\\  (\sin\gamma\cos\theta - \sin\theta\cos\gamma)* (~ \sin\phi\cos\gamma\\ \left( \sin\theta\cos\phi -\cos\theta\sin\phi  \right)\\ - \cos\phi\sin\gamma\left( \sin\theta\cos\phi -\cos\theta\sin\phi  \right)~ )~
         ]
 \end{multline*}
 
