@@ -46,8 +46,10 @@ $$ is~~  \frac{4ab~\sin(\theta-\phi)\sin(\phi-\gamma)\sin(\gamma-\phi)}{\sin2\th
 \noindent
 \section*{\textbf{Solution}}
 \noindent
-$$ x_1=a\tan\theta,~x_2=a\tan\phi,~x_3=a\tan\gamma,$$
-$$y_1=b\cot\theta,~y_2=b\cot\phi,~y_3=b\cot\gamma$$ area~ of ~triangle=~$\frac{1}{2}$\vspace{0.3cm}~\begin{vmatrix}
+$$ \vec{x_1} = \myvec{a\tan\theta}, \vec{x_2} = \myvec{a\tan\phi}
+\vec{x_3}=\myvec{a\tan\gamma},$$
+$$\vec{y_1}=\myvec{b\cot\theta},\vec{y_2}=\myvec{b\cot\phi},\vec{y_3}=\myvec{b\cot\gamma}$$ 
+area~ of ~triangle=~$\frac{1}{2}$\vspace{0.3cm}~\begin{vmatrix}
  x_{1} & y_{1} & 1  \\ 
  x_{2} & y_{2} & 1  \\
  x_{3} & y_{3} & 1 
@@ -57,26 +59,35 @@ $$y_1=b\cot\theta,~y_2=b\cot\phi,~y_3=b\cot\gamma$$ area~ of ~triangle=~$\frac{1
  a\tan\phi & b\cot\phi & 1  \\
  a\tan\gamma & b\cot\gamma & 1 
 \end{vmatrix}
+\\
+=~$\frac{ab}{2}$\vspace{0.3cm}~\begin{vmatrix}
+ \tan\theta & \cot\theta & 1  \\ 
+ \tan\phi &   \cot\phi & 1  \\
+ \tan\gamma & \cot\gamma & 1 
+\end{vmatrix}
+\begin{flushright}
+$\because  taking ~a~ for ~C1 ~and~ b ~from~ C2~ common $
+\end{flushright}
 
 \\ \vspace{0.3cm}
-=~$\frac{1}{2}$~\begin{vmatrix}
- a\tan\theta & b\cot\theta & 1  \\ 
- a\tan\phi-a\tan\theta & b\cot\phi-b\cot\theta & 0  \\
- a\tan\gamma-a\tan\theta & b\cot\gamma-b\cot\theta & 0 
+=~$\frac{ab}{2}$~\begin{vmatrix}
+ \tan\theta & \cot\theta & 1  \\ 
+ \tan\phi-\tan\theta & \cot\phi-\cot\theta & 0  \\
+ \tan\gamma-\tan\theta & \cot\gamma-\cot\theta & 0 
 \end{vmatrix}
 \begin{flushright}
 $\because R2=R2-R1 ~and~ R3=R3-R1$
 \end{flushright}
 \vspace{0.3cm}
 \begin{multline*}
-   \therefore \frac{1}{2} (a\tan\phi-a\tan\theta *b\cot\gamma-b\cot\theta)~-\\(a\tan\gamma-a\tan\theta*b\cot\phi-b\cot\theta)
+   \therefore \frac{ab}{2} [(\tan\phi-\tan\theta) *(\cot\gamma-\cot\theta)~-\\(\tan\gamma-\tan\theta)*(\cot\phi-\cot\theta)]
 \end{multline*}
 \begin{flushright}
 $\because  solving~determinant $
 \end{flushright}
 \\
 \vspace{0.2cm}
-$$\therefore\frac{1}{2}[a\tan\theta(b\cot\phi-b\cot\gamma)+a\tan\phi(b\cot\gamma-b\cot\theta)$$$$+a\tan\gamma(b\cot\theta-b\cot\phi)]$$
+$$\therefore\frac{ab}{2}[\tan\theta(\cot\phi-\cot\gamma)+\tan\phi(\cot\gamma-\cot\theta)$$$$+\tan\gamma(\cot\theta-\cot\phi)]$$
 
 \begin{flushright}
 $\because  solving~above~equation $
@@ -84,7 +95,7 @@ $\because  solving~above~equation $
 \vspace{0.2cm}
 $$ \therefore \frac{ab}{2}[\left(\tan\theta*\cot\phi -\tan\theta*\cot\gamma\right)+$$$$ \left(\tan\phi*\cot\gamma -\tan\phi*\cot\theta\right) + $$$$\left(\tan\gamma*\cot\theta -\tan\gamma*\cot\phi\right)]$$ 
 \begin{flushright}
-$ \because$ taking~``ab" ~as ~common
+$\because  solving~above~equation $
 \end{flushright}
 
 
@@ -113,11 +124,11 @@ $\because$ representing tan and cot in sin and cos form\end{flushright} `
 \end{multline*}
 \begin{flushright}
 $\because$ multiplying and  dividing each term with 4$\sin X \cos X \sin2X$
-\end{flushright}
+\end{flushright}\\
 \vspace{0.3cm}
 \begin{multline*}
-        \therefore \frac{4ab}{2}[ 
-        (\frac{\sin2\gamma* \left( \sin\theta*\cos\phi \right)^2 -\sin2\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\ph*\sin\2\theta*\sin\2\gamma}) \\ +
+        \frac{4ab}{2} [ 
+        \frac{\sin2\gamma* \left( \sin\theta*\cos\phi \right)^2 -\sin2\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\ph*\sin\2\theta*\sin\2\gamma} \\ +
         (\frac{\sin2\theta* \left( \sin\phi*\cos\gamma \right)^2 -\sin2\gamma* \left( \sin\phi*\cos\theta \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )\\ +
         (\frac{\sin2\phi* \left( \sin\gamma*\cos\theta \right)^2 -\sin2\theta* \left( \sin\gamma*\cos\phi \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )
         ] 
@@ -165,11 +176,11 @@ $\because ~rearranging ~terms$
 \end{flushright}
 \vspace{0.3cm}
 \begin{multline*}
-    \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
+    ~~~~\therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
     [\\ 
-    \sin\gamma\cos\theta (~ \sin\theta\cos\phi\sin\phi\cos\gamma  -\cos\theta\cos\gamma\sin^2\phi -\\ \sin\theta\sin\gamma\cos^2\phi +
+    \sin\gamma\cos\theta (~ \sin\theta\cos\phi\sin\phi\cos\gamma  \\-\cos\theta\cos\gamma\sin^2\phi - \sin\theta\sin\gamma\cos^2\phi \\+
         \cos\theta\sin\theta\cos\phi\sin\gamma~ )
-    \\-\cos\gamma\sin\theta ( ~\sin\theta\cos\phi\sin\phi\cos\gamma - \cos\theta\cos\gamma\sin^2\phi \\ - \sin\theta\sin\gamma\cos^2\phi+ \cos\theta\sin\theta\cos\phi\sin\gamma ~)~]
+    -\cos\gamma\sin\theta \\( ~\sin\theta\cos\phi\sin\phi\cos\gamma - \cos\theta\cos\gamma\sin^2\phi \\ - \sin\theta\sin\gamma\cos^2\phi+ \cos\theta\sin\theta\cos\phi\sin\gamma ~)~]
 \end{multline*}
 \begin{flushright}
 $\because taking~ common ~\sin\gamma\cos\theta ~and~ \sin\theta\cos\gamma$
