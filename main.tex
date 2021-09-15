@@ -39,7 +39,7 @@ Assignment - 1
 \noindent
 \textbf{\textsl{1.Show that the area of the triangle whose vertices are:
 $$(a \tan\theta, b\cot\theta),(a \tan \phi, b\cot \phi),(a \tan \gamma, b\cot \gamma)~~$$
-$$ is~~  \frac{4ab~\sin(\theta-\phi)\sin(\phi-\gamma)\sin(\gamma-\phi)}{\sin2\theta\sin2\phi\sin2\gamma}$$ }}
+$$ is~~  \frac{4ab~\sin(\theta-\phi)\sin(\phi-\gamma)\sin(\gamma-\theta)}{\sin2\theta\sin2\phi\sin2\gamma}$$ }}
 
 
 
@@ -79,134 +79,99 @@ $\because  taking ~a~ for ~C1 ~and~ b ~from~ C2~ common $
 $\because R2=R2-R1 ~and~ R3=R3-R1$
 \end{flushright}
 \vspace{0.3cm}
+   =~$\frac{ab}{2}$~\begin{vmatrix}\vspace{0.3cm}
+ \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
+ \frac{\sin\phi}{\cos\phi}-\frac{\sin\theta}{\cos\theta} & \frac{\cos\phi}{\sin\phi}-\frac{\cos\theta}{\sin\theta} & 0  \\
+ \frac{\sin\gamma}{\cos\gamma}-\frac{\sin\theta}{\cos\theta} & \frac{\cos\gamma}{\sin\gamma}-\frac{\cos\theta}{\sin\theta} & 0 
+\end{vmatrix}
+
+\begin{flushright}
+$\because \tan x = \frac{\sin x}{\cos x}~and~\cot x = \frac{\cos x}{\sin x} $
+\end{flushright}
+
+\vspace{0.3cm}
+   =~$\frac{ab}{2}$~\begin{vmatrix}\vspace{0.3cm}
+ \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
+ \frac{\sin\phi\cos\theta - \sin\theta\cos\phi}{\cos\phi\cos\theta} & \frac{\sin\theta\cos\phi - \sin\phi\cos\theta}{\sin\phi\sin\theta} & 0  \\
+  \frac{\sin\gamma\cos\theta - \sin\theta\cos\gamma}{\cos\gamma\cos\theta} & \frac{\sin\theta\cos\gamma - \sin\gamma\cos\theta}{\sin\gamma\sin\theta} & 0
+\end{vmatrix}
+
+\begin{flushright}
+$\because ~rearranging ~terms $
+\end{flushright}
+
+\vspace{0.3cm}
+   =~$\frac{ab}{2}$~\begin{vmatrix}\vspace{0.3cm}
+ \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
+ \frac{\sin(\phi-\theta)}{\cos\phi\cos\theta} & \frac{\sin(\theta-\phi)}{\sin\phi\sin\theta} & 0  \\
+ \frac{\sin(\gamma-\theta)}{\cos\phi\cos\theta} & \frac{\sin(\theta-\gamma)}{\sin\phi\sin\theta} & 0 
+\end{vmatrix}
+\begin{flushright}
+$\because \sin A\cos B - \sin B\cos A = \sin(A-B)$
+\end{flushright}
+\vspace{0.3cm}
 \begin{multline*}
-   \therefore \frac{ab}{2} [(\tan\phi-\tan\theta) *(\cot\gamma-\cot\theta)~-\\(\tan\gamma-\tan\theta)*(\cot\phi-\cot\theta)]
-\end{multline*}
-\begin{flushright}
-$\because  solving~determinant $
-\end{flushright}
-\\
-\vspace{0.2cm}
-$$\therefore\frac{ab}{2}[\tan\theta(\cot\phi-\cot\gamma)+\tan\phi(\cot\gamma-\cot\theta)$$$$+\tan\gamma(\cot\theta-\cot\phi)]$$
-
-\begin{flushright}
-$\because  solving~above~equation $
-\end{flushright}
-\vspace{0.2cm}
-$$ \therefore \frac{ab}{2}[\left(\tan\theta*\cot\phi -\tan\theta*\cot\gamma\right)+$$$$ \left(\tan\phi*\cot\gamma -\tan\phi*\cot\theta\right) + $$$$\left(\tan\gamma*\cot\theta -\tan\gamma*\cot\phi\right)]$$ 
-\begin{flushright}
-$\because  solving~above~equation $
-\end{flushright}
-
-
-$$\therefore \frac{ab}{2}[~(~\frac{\sin\theta*\cos\phi}{\cos\theta*\sin\phi}- \frac{\sin\theta*\cos\gamma}{\cos\theta*\sin\gamma}~)+$$ 
-    $$(~\frac{\sin\phi*\cos\gamma}{\cos\phi*\sin\gamma}-\frac{\sin\phi*\cos\theta}{\cos\phi*\sin\theta}~)
-    +$$
-    $$(~\frac{\sin\gamma*\cos\theta}{\cos\gamma*\sin\theta}-\frac{\sin\gamma*\cos\phi}{\cos\gamma*\sin\phi}~)~]$$
-\begin{flushright}
-$\because$ representing tan and cot in sin and cos form\end{flushright} `
-
-% $$\therefore \frac{ab}{2}\left[
-%   \left(\frac{\sin\theta*\cos\phi}{\cos\theta*\sin\phi}*\frac{4\sin\theta*\cos\phi*\sin2\gamma}{4\sin\theta*\cos\phi*\sin2\gamma}-$$
-%   $$\frac{\sin\theta*\cos\gamma}{\cos\theta*\sin\gamma}*\frac{4\sin\theta*\cos\gamma*\sin2\phi}{4\sin\theta*\cos\gamma*\sin2\phi}\right) +$$
-%   $$ \left(\frac{\sin\phi*\cos\gamma}{\cos\phi*\sin\gamma}*\frac{4\sin\phi*\cos\gamma*\sin2\theta}{4\sin\phi*\cos\gamma*\sin2\theta}-$$
-%   $$\frac{\sin\phi*\cos\theta}{\cos\phi*\sin\theta}*\frac{4\sin\phi*\cos\theta*\sin2\gamma}{4\sin\phi*\cos\theta*\sin2\gamma}\right)+$$
-%   $$\left(\frac{\sin\gamma*\cos\theta}{\cos\gamma*\sin\theta}*\frac{4\sin\gamma*\cos\theta*\sin2\phi}{4\sin\gamma*\cos\theta*\sin2\phi}-$$
-%   $$\frac{\sin\gamma*\cos\phi}{\cos\gamma*\sin\phi}*\frac{4\sin\gamma*\cos\phi*\sin2\theta}{4\sin\gamma*\cos\phi*\sin2\theta}\right)
-%     \right]$$
-
-\begin{multline*}
-\therefore \frac{ab}{2}[
-    (\frac{\sin\theta*\cos\phi}{\cos\theta*\sin\phi}*\frac{4\sin\theta*\cos\phi*\sin2\gamma}{4\sin\theta*\cos\phi*\sin2\gamma}-\\ \frac{\sin\theta*\cos\gamma}{\cos\theta*\sin\gamma}*\frac{4\sin\theta*\cos\gamma*\sin2\phi}{4\sin\theta*\cos\gamma*\sin2\phi}) +\\
-    (\frac{\sin\phi*\cos\gamma}{\cos\phi*\sin\gamma}*\frac{4\sin\phi*\cos\gamma*\sin2\theta}{4\sin\phi*\cos\gamma*\sin2\theta}-\\\frac{\sin\phi*\cos\theta}{\cos\phi*\sin\theta}*\frac{4\sin\phi*\cos\theta*\sin2\gamma}{4\sin\phi*\cos\theta*\sin2\gamma})+\\
-    (\frac{\sin\gamma*\cos\theta}{\cos\gamma*\sin\theta}*\frac{4\sin\gamma*\cos\theta*\sin2\phi}{4\sin\gamma*\cos\theta*\sin2\phi}-\\\frac{\sin\gamma*\cos\phi}{\cos\gamma*\sin\phi}*\frac{4\sin\gamma*\cos\phi*\sin2\theta}{4\sin\gamma*\cos\phi*\sin2\theta})
+    =\frac{ab}{2}[ \left(\frac{\sin(\phi-\theta)\sin(\theta-\gamma)}{\sin\theta\cos\theta\cos\phi\sin\gamma}\right)~-\\\vspace{0.3cm} \left(\frac{\sin(\gamma-\theta)\sin(\theta-\phi)}{\sin\theta\cos\theta\sin\phi\cos\gamma}\right)
     ]
 \end{multline*}
 \begin{flushright}
-$\because$ multiplying and  dividing each term with 4$\sin X \cos X \sin2X$
-\end{flushright}\\
-\vspace{0.3cm}
-\begin{multline*}
-        \frac{4ab}{2} [ 
-        \frac{\sin2\gamma* \left( \sin\theta*\cos\phi \right)^2 -\sin2\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\ph*\sin\2\theta*\sin\2\gamma} \\ +
-        (\frac{\sin2\theta* \left( \sin\phi*\cos\gamma \right)^2 -\sin2\gamma* \left( \sin\phi*\cos\theta \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )\\ +
-        (\frac{\sin2\phi* \left( \sin\gamma*\cos\theta \right)^2 -\sin2\theta* \left( \sin\gamma*\cos\phi \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )
-        ] 
-\end{multline*}
-\begin{flushright}
-$\because$ ~simplifying ~above ~equation
-\end{flushright}
-\vspace{0.1cm}
-\begin{multline*}
-
-        \therefore \frac{4ab}{2}[ ~
-        (\frac{2\sin\gamma\cos\gamma* \left( \sin\theta*\cos\phi \right)^2 \\ -2\sin\phi\cos\phi* \left( \sin\theta*\cos\gamma \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} )\\ +
-         (\frac{2\sin\theta\cos\theta* \left( \sin\phi*\cos\gamma \right)^2 -2\sin\gamma\cos\gamma* \left( \sin\phi*\cos\theta \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma} ) +\\
-        (\frac{2\sin\phi\cos\phi* \left( \sin\theta*\cos\phi \right)^2 -2\sin\theta\cos\theta* \left( \sin\gamma*\cos\phi \right)^2 }{\sin2\theta*\sin\2\phi*\sin\2\gamma})
-       ] 
-\end{multline*}
-\begin{flushright}
-$\because \sin2\theta  = 2\sin\theta\cos\theta$
-\end{flushright}
-
-\bibliographystyle{IEEEtran}
-\noindent
-\begin{multline*}
-        \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}[ \\ 
-        (~\sin\gamma\cos\gamma* \left( \sin\theta*\cos\phi \right)^2 \\-\sin\phi\cos\phi* \left( \sin\theta*\cos\gamma \right)^2~)\\+   
-        (~\sin\theta\cos\theta* \left( \sin\phi*\cos\gamma \right)^2 \\-\sin\gamma\cos\gamma* \left( \sin\phi*\cos\theta \right)^2~)\\+
-        (~\sin\phi\cos\phi* \left( \sin\gamma*\cos\theta \right)^2 \\-\sin\theta\cos\theta* \left( \sin\gamma*\cos\phi \right)^2~)\\+
-        \sin\theta*\cos\theta*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma \\- \sin\theta*\cos\theta*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma
-        ]
-\end{multline*}
-\begin{flushright}
-$\because ~adding ~and ~ subtracting \sin\theta*\cos\theta*\\*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma $
+$\because expanding ~ determinant $
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline*}
-        \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}[ \\
-        \sin\theta*\cos\theta*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma \\-\sin\gamma\cos\gamma* \left( \sin\phi*\cos\theta \right)^2-
-        \sin\theta\cos\theta* \left( \sin\gamma*\cos\phi \right)^2\\+\sin\phi\cos\phi* \left( \sin\gamma*\cos\theta \right)^2-\sin\phi\cos\phi* \left( \sin\theta*\cos\gamma \right)^2 \\+
-        \sin\theta\cos\theta* \left( \sin\phi*\cos\gamma \right)^2+ \sin\gamma\cos\gamma* \left( \sin\theta*\cos\phi \right)^2\\ - \sin\theta*\cos\theta*\sin\phi*\cos\phi*\sin\gamma*\cos\gamma~
-        ]
+    =\frac{ab}{2\sin\theta\cos\theta\cos\phi\sin\phi\cos\gamma\sin\gamma}[ \\ \sin\phi\cos\gamma \left(\sin(\phi-\theta)\sin(\theta-\gamma)\right) -\\ \sin\gamma\cos\phi\left(\sin(\gamma-\theta)\sin(\theta-\phi)\right)~
+    ]
 \end{multline*}
 \begin{flushright}
-$\because ~rearranging ~terms$
-\end{flushright}
-\vspace{0.3cm}
-\begin{multline*}
-    ~~~~\therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
-    [\\ 
-    \sin\gamma\cos\theta (~ \sin\theta\cos\phi\sin\phi\cos\gamma  \\-\cos\theta\cos\gamma\sin^2\phi - \sin\theta\sin\gamma\cos^2\phi \\+
-        \cos\theta\sin\theta\cos\phi\sin\gamma~ )
-    -\cos\gamma\sin\theta \\( ~\sin\theta\cos\phi\sin\phi\cos\gamma - \cos\theta\cos\gamma\sin^2\phi \\ - \sin\theta\sin\gamma\cos^2\phi+ \cos\theta\sin\theta\cos\phi\sin\gamma ~)~]
-\end{multline*}
-\begin{flushright}
-$\because taking~ common ~\sin\gamma\cos\theta ~and~ \sin\theta\cos\gamma$
+$\because solving~above~equation $
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline*}
-        \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
-        [\\  (\sin\gamma\cos\theta - \sin\theta\cos\gamma)* (~ \sin\phi\cos\gamma\\ \left( \sin\theta\cos\phi -\cos\theta\sin\phi  \right)\\ - \cos\phi\sin\gamma\left( \sin\theta\cos\phi -\cos\theta\sin\phi  \right)~ )~
-        ]
+    =\frac{ab* ~8}{2*~8\sin\theta\cos\theta\cos\phi\sin\phi\cos\gamma\sin\gamma}[ \\ \sin\phi\cos\gamma \left(\sin(\phi-\theta)\sin(\theta-\gamma)\right) -\\ \sin\gamma\cos\phi\left(\ (-sin(\theta-\gamma))(-\sin(\phi-\theta)\right))~
+    ]
 \end{multline*}
+\begin{flushright}
+$\because multiplying~8 ~and ~dividing~8 ~and \\~ \sin (b-a)=-\sin (a-b) $
+\end{flushright}
 
 \vspace{0.3cm}
 \begin{multline*}
-        \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
-        [\\  \left(\sin\gamma\cos\theta - \sin\theta\cos\gamma \right)*\left(\sin\phi\cos\gamma - \sin\phi\cos\theta \right)\\
-        *\left(\sin\theta\cos\phi - \sin\phi\cos\theta \right)
-        ~]
+    =\frac{4ab}{2\sin\theta\cos\theta~2\cos\phi\sin\phi~2\cos\gamma\sin\gamma}[ \\ \sin\phi\cos\gamma \left(\sin(\phi-\theta)\sin(\theta-\gamma)\right) -\\ \sin\gamma\cos\phi\left(\sin(\theta-\gamma)sin(\phi-\theta)\right)~
+    ]
 \end{multline*}
+\begin{flushright}
+$\because ~rearranging ~terms $
+\end{flushright}
+
 \vspace{0.3cm}
 \begin{multline*}
-        \therefore \frac{4ab*2}{2*\sin2\theta*\sin\2\phi*\sin\2\gamma}
-        [\\  \left(~\sin\left(\gamma-\theta     \right) \right)*
-        \left(\sin\left(\phi-\gamma     \right) \right)*
-        \left(\sin\left(\theta-\phi \right)~ \right)~]=R.H.S
+    =\frac{4ab~ \sin(\phi-\theta)~\sin(\theta-\gamma) }{\sin2\theta~\sin2\phi~\sin2\gamma}[ \\ \sin\phi\cos\gamma - \sin\gamma\cos\phi
+    ]
 \end{multline*}
+\begin{flushright}
+$\because \sin X \cos X = \sin2X ~and ~taking ~ $
+\end{flushright}
 
+\vspace{0.3cm}
+\begin{multline*}
+    =\frac{4ab~ \sin(\phi-\theta)~\sin(\theta-\gamma)~\sin(\phi-\gamma) }{\sin2\theta~\sin2\phi~\sin2\gamma~\sin(\phi-\gamma)}
+\end{multline*}
+\begin{flushright}
+$\because \sin A\cos B - \sin B\cos A = \sin(A-B)$
+\end{flushright}
 
+\vspace{0.3cm}
+\begin{multline*}
+    =\frac{4ab~(-\sin(\theta-\phi))~\sin(\phi-\gamma)~(-\sin(\gamma-\theta) )}{\sin2\theta~\sin2\phi~\sin2\gamma~\sin(\phi-\gamma)}
+\end{multline*}
+\begin{flushright}
+$\sin (b-a)=-\sin (a-b) $
+\end{flushright}
+
+\vspace{0.3cm}
+\begin{multline*}
+    =\frac{4ab~\sin(\theta-\phi)~\sin(\phi-\gamma)~\sin(\gamma-\theta) }{\sin2\theta~\sin2\phi~\sin2\gamma~\sin(\phi-\gamma)} = R.H.S
+\end{multline*}
 \end{document}
