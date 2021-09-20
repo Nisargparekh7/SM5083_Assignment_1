@@ -111,76 +111,73 @@ $\because ~rearranging ~terms $
 =\frac{ab}{2}~\begin{vmatrix}\vspace{0.3cm}
  \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
  \frac{\sin(\phi-\theta)}{\cos\phi\cos\theta} & \frac{\sin(\theta-\phi)}{\sin\phi\sin\theta} & 0  \\
- \frac{\sin(\gamma-\theta)}{\cos\phi\cos\theta} & \frac{\sin(\theta-\gamma)}{\sin\phi\sin\theta} & 0 
+ \frac{\sin(\gamma-\theta)}{\cos\gamma\cos\theta} & \frac{\sin(\theta-\gamma)}{\sin\gamma\sin\theta} & 0 
 \end{vmatrix}    
 \end{multline}
 \begin{flushright}
 $\because \sin A\cos B - \sin B\cos A = \sin(A-B)$
 \end{flushright}
-\vspace{0.3cm}
 
+\vspace{0.3cm}
 \begin{multline}
-    =\frac{ab}{2}[ \left(\frac{\sin(\phi-\theta)\sin(\theta-\gamma)}{\sin\theta\cos\theta\cos\phi\sin\gamma}\right)~-\\\vspace{0.3cm} \left(\frac{\sin(\gamma-\theta)\sin(\theta-\phi)}{\sin\theta\cos\theta\sin\phi\cos\gamma}\right)
-    ]
+=\frac{ab}{2 \sin\theta\cos\theta}~\begin{vmatrix}\vspace{0.3cm}
+ {\sin\theta} & {\cos\theta} & 1  \\ \vspace{0.3cm}$-$
+ \frac{\sin(\theta-\phi)}{\cos\phi} & \frac{\sin(\theta-\phi)}{\sin\phi} & 0  \\
+ \frac{\sin(\gamma-\theta)}{\cos\gamma} &$-$ \frac{\sin(\gamma-\theta)}{\sin\gamma} & 0 
+\end{vmatrix}    
 \end{multline}
 \begin{flushright}
-$\because expanding ~ determinant $
+$\because taking ~ \frac{1}{\cos\theta},\frac{1}{\sin\theta}~common ~from ~column~ 1 ~and~ 2$
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline}
-    =\frac{ab}{2\sin\theta\cos\theta\cos\phi\sin\phi\cos\gamma\sin\gamma}[ \\ \sin\phi\cos\gamma \left(\sin(\phi-\theta)\sin(\theta-\gamma)\right) -\\ \sin\gamma\cos\phi\left(\sin(\gamma-\theta)\sin(\theta-\phi)\right)~
-    ]
+=\frac{ab~(-\sin(\theta-\phi))~(-\sin(\gamma-\theta))}{2 \sin\theta\cos\theta}~\begin{vmatrix}\vspace{0.3cm}
+ {\sin\theta} & {\cos\theta} & 1  \\ \vspace{0.3cm}
+ \frac{1}{\cos\phi} & \frac{1}{\sin\phi} & 0  \\
+ \frac{1}{\cos\gamma} & \frac{1}{\sin\gamma} & 0 
+\end{vmatrix}    
 \end{multline}
 \begin{flushright}
-$\because solving~above~equation $
+$\because taking \sin(\theta-\phi)~common ~from ~row ~2$
+$and~\sin(\gamma-\theta)~common ~from ~row ~3$
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline}
-    =\frac{ab* ~8}{2*~8\sin\theta\cos\theta\cos\phi\sin\phi\cos\gamma\sin\gamma}[ \\ \sin\phi\cos\gamma \left(\sin(\phi-\theta)\sin(\theta-\gamma)\right) -\\ \sin\gamma\cos\phi\left(\ (-sin(\theta-\gamma))(-\sin(\phi-\theta)\right))~
-    ]
+=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{1}{\cos\phi\sin\gamma}-\frac{1}{\sin\phi\cos\gamma}
+\right]
 \end{multline}
 \begin{flushright}
-$\because multiplying~8 ~and ~dividing~8 ~and \\~ \sin (b-a)=-\sin (a-b) $
+$\because solving~determinate $
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline}
-    =\frac{4ab}{2\sin\theta\cos\theta~2\cos\phi\sin\phi~2\cos\gamma\sin\gamma}[ \\ \sin\phi\cos\gamma \left(\sin(\phi-\theta)\sin(\theta-\gamma)\right) -\\ \sin\gamma\cos\phi\left(\sin(\theta-\gamma)sin(\phi-\theta)\right)~
-    ]
+=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{\sin\phi\cos\gamma-\cos\phi\sin\gamma}{\sin\phi\cos\phi\sin\gamma\cos\gamma}
+\right]
 \end{multline}
 \begin{flushright}
-$\because ~rearranging ~terms $
+$\because solving ~above~equation $
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline}
-    =\frac{4ab~ \sin(\phi-\theta)~\sin(\theta-\gamma) }{\sin2\theta~\sin2\phi~\sin2\gamma}[ \\ \sin\phi\cos\gamma - \sin\gamma\cos\phi
-    ]
-\end{multline}
-\begin{flushright}
-$\because \sin X \cos X = \sin2X ~and ~taking ~ $
-\end{flushright}
-
-\vspace{0.3cm}
-\begin{multline}
-    =\frac{4ab~ \sin(\phi-\theta)~\sin(\theta-\gamma)~\sin(\phi-\gamma) }{\sin2\theta~\sin2\phi~\sin2\gamma~\sin(\phi-\gamma)}
+=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{4~\sin(\phi-\gamma)}{4~\sin\phi\cos\phi\sin\gamma\cos\gamma}
+\right]
 \end{multline}
 \begin{flushright}
 $\because \sin A\cos B - \sin B\cos A = \sin(A-B)$
+$~multiply ~and ~divide ~by ~4$
 \end{flushright}
 
 \vspace{0.3cm}
 \begin{multline}
-    =\frac{4ab~(-\sin(\theta-\phi))~\sin(\phi-\gamma)~(-\sin(\gamma-\theta) )}{\sin2\theta~\sin2\phi~\sin2\gamma~\sin(\phi-\gamma)}
+=\frac{4ab~\sin(\theta-\phi)~\sin(\gamma-\theta)~\sin(\phi-\gamma)}{ \sin2\theta~2\sin\phi\cos\phi~2\sin\gamma\cos\gamma}
 \end{multline}
-\begin{flushright}
-$\sin (b-a)=-\sin (a-b) $
-\end{flushright}
-
 \vspace{0.3cm}
 \begin{multline*}
-    =\frac{4ab~\sin(\theta-\phi)~\sin(\phi-\gamma)~\sin(\gamma-\theta) }{\sin2\theta~\sin2\phi~\sin2\gamma~\sin(\phi-\gamma)} = R.H.S
+=\frac{4ab~\sin(\theta-\phi)~\sin(\gamma-\theta)~\sin(\phi-\gamma)}{ \sin2\theta~\sin2\phi~\sin2\gamma} = R.H.S
 \end{multline*}
+
 \end{document}
