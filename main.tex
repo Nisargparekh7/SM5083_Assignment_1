@@ -40,153 +40,127 @@ Assignment - 1
 \textbf{\textsl{1.Show that the area of the triangle whose vertices are:
 $$(a \tan\theta, b\cot\theta),(a \tan \phi, b\cot \phi),(a \tan \gamma, b\cot \gamma)~~$$
 $$ is~~  \frac{4ab~\sin(\theta-\phi)\sin(\phi-\gamma)\sin(\gamma-\theta)}{\sin2\theta\sin2\phi\sin2\gamma}$$ }}
-
-
-
 \noindent
 \section*{\textbf{Solution}}
 \noindent
-$$ \vec{x_1} = \myvec{a\tan\theta}, \vec{x_2} = \myvec{a\tan\phi}
-\vec{x_3}=\myvec{a\tan\gamma},$$
-$$\vec{y_1}=\myvec{b\cot\theta},\vec{y_2}=\myvec{b\cot\phi},\vec{y_3}=\myvec{b\cot\gamma}$$
+\begin{align*}
+ \vec{x_1} = \mydet{a\tan\theta}, \vec{x_2} = \myvec{a\tan\phi}
+\vec{x_3}=\myvec{a\tan\gamma}\\\vec{y_1}=\myvec{b\cot\theta},\vec{y_2}=\myvec{b\cot\phi},\vec{y_3}=\myvec{b\cot\gamma}\end{align*}
 \begin{multline}
-area~ of ~triangle=~\frac{1}{2}\vspace{0.3cm}~\begin{vmatrix}
+area~ of ~triangle=~\frac{1}{2} \mydet{
  x_{1} & y_{1} & 1  \\ 
  x_{2} & y_{2} & 1  \\
  x_{3} & y_{3} & 1 
-\end{vmatrix}\end{multline}\\
+}\end{multline}
+
 \begin{multline}
-=~\frac{1}{2}\vspace{0.3cm}~\begin{vmatrix}
+=~\frac{1}{2}~\mydet{
  a\tan\theta & b\cot\theta & 1  \\ 
  a\tan\phi & b\cot\phi & 1  \\
  a\tan\gamma & b\cot\gamma & 1 
-\end{vmatrix}\end{multline}\\
+}\end{multline}\\
 \begin{multline}
-=~\frac{ab}{2}\vspace{0.3cm}~\begin{vmatrix}
+=~\frac{ab}{2}~\mydet{
  \tan\theta & \cot\theta & 1  \\ 
  \tan\phi &   \cot\phi & 1  \\
  \tan\gamma & \cot\gamma & 1 
-\end{vmatrix}
+}
 \end{multline}
-\begin{flushright}
 $\because  taking ~a~ for ~C1 ~and~ b ~from~ C2~ common $
-\end{flushright}
 
-\\ \vspace{0.3cm}
 \begin{multline}
-=~\frac{ab}{2}~\begin{vmatrix}
+=~\frac{ab}{2}~\mydet{
  \tan\theta & \cot\theta & 1  \\ 
  \tan\phi-\tan\theta & \cot\phi-\cot\theta & 0  \\
  \tan\gamma-\tan\theta & \cot\gamma-\cot\theta & 0 
-\end{vmatrix}\end{multline}
-\begin{flushright}
-$\because R2=R2-R1 ~and~ R3=R3-R1$
-\end{flushright}
+}\end{multline}
 
-\vspace{0.3cm}
+$\because R2=R2-R1 ~and~ R3=R3-R1$
+
 \begin{multline}
-=~\frac{ab}{2}~\begin{vmatrix}\vspace{0.3cm}
- \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
+=~\frac{ab}{2}~\mydet{
+ \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ 
  \frac{\sin\phi}{\cos\phi}-\frac{\sin\theta}{\cos\theta} & \frac{\cos\phi}{\sin\phi}-\frac{\cos\theta}{\sin\theta} & 0  \\
  \frac{\sin\gamma}{\cos\gamma}-\frac{\sin\theta}{\cos\theta} & \frac{\cos\gamma}{\sin\gamma}-\frac{\cos\theta}{\sin\theta} & 0 
-\end{vmatrix}\end{multline}
-\begin{flushright}
+}\end{multline}
 $\because \tan x = \frac{\sin x}{\cos x}~and~\cot x = \frac{\cos x}{\sin x} $
-\end{flushright}
 
-\vspace{0.3cm}
 \begin{multline}
-=\frac{ab}{2}~\begin{vmatrix}\vspace{0.3cm}
- \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
+=\frac{ab}{2}~\mydet{
+ \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ 
  \frac{\sin\phi\cos\theta - \sin\theta\cos\phi}{\cos\phi\cos\theta} & \frac{\sin\theta\cos\phi - \sin\phi\cos\theta}{\sin\phi\sin\theta} & 0  \\
   \frac{\sin\gamma\cos\theta - \sin\theta\cos\gamma}{\cos\gamma\cos\theta} & \frac{\sin\theta\cos\gamma - \sin\gamma\cos\theta}{\sin\gamma\sin\theta} & 0
-\end{vmatrix}    
+}   
 \end{multline}
-\begin{flushright}
 $\because ~rearranging ~terms $
-\end{flushright}
 
-\vspace{0.3cm}
+
 \begin{multline}
-=\frac{ab}{2}~\begin{vmatrix}\vspace{0.3cm}
- \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ \vspace{0.3cm}
+=\frac{ab}{2}~\mydet{
+ \frac{\sin\theta}{\cos\theta} & \frac{\cos\theta}{\sin\theta} & 1  \\ 
  \frac{\sin(\phi-\theta)}{\cos\phi\cos\theta} & \frac{\sin(\theta-\phi)}{\sin\phi\sin\theta} & 0  \\
  \frac{\sin(\gamma-\theta)}{\cos\gamma\cos\theta} & \frac{\sin(\theta-\gamma)}{\sin\gamma\sin\theta} & 0 
-\end{vmatrix}    
+}    
 \end{multline}
-\begin{flushright}
 $\because \sin A\cos B - \sin B\cos A = \sin(A-B)$
-\end{flushright}
 
-\vspace{0.3cm}
 \begin{multline}
-=\frac{ab}{2 \sin\theta\cos\theta}~\begin{vmatrix}\vspace{0.3cm}
- {\sin\theta} & {\cos\theta} & 1  \\ \vspace{0.3cm}$-$
+=\frac{ab}{2 \sin\theta\cos\theta}~\mydet{
+ {\sin\theta} & {\cos\theta} & 1  \\ $-$
  \frac{\sin(\theta-\phi)}{\cos\phi} & \frac{\sin(\theta-\phi)}{\sin\phi} & 0  \\
  \frac{\sin(\gamma-\theta)}{\cos\gamma} &$-$ \frac{\sin(\gamma-\theta)}{\sin\gamma} & 0 
-\end{vmatrix}    
+}
 \end{multline}
-\begin{flushright}
 $\because taking ~ \frac{1}{\cos\theta},\frac{1}{\sin\theta}~common ~from ~column~ 1 ~and~ 2$
-\end{flushright}
 
-\vspace{0.3cm}
+
 \begin{multline}
-=\frac{ab~(-\sin(\theta-\phi))~(-\sin(\gamma-\theta))}{2 \sin\theta\cos\theta}~\begin{vmatrix}\vspace{0.3cm}
- {\sin\theta} & {\cos\theta} & 1  \\ \vspace{0.3cm}
+=\frac{ab~(-\sin(\theta-\phi))~(-\sin(\gamma-\theta))}{2 \sin\theta\cos\theta}~\begin{vmatrix}
+ {\sin\theta} & {\cos\theta} & 1  \\ 
  \frac{1}{\cos\phi} & \frac{1}{\sin\phi} & 0  \\
  \frac{1}{\cos\gamma} & \frac{1}{\sin\gamma} & 0 
 \end{vmatrix}    
 \end{multline}
-\begin{flushright}
 $\because taking \sin(\theta-\phi)~common ~from ~row ~2$
-$and~\sin(\gamma-\theta)~common ~from ~row ~3$
-\end{flushright}
+$~and~\sin(\gamma-\theta)~common ~from ~row ~3$
 
-\vspace{0.3cm}
+
 \begin{multline}
 =\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{1}{\cos\phi\sin\gamma}-\frac{1}{\sin\phi\cos\gamma}
 \right]
 \end{multline}
-\begin{flushright}
 $\because solving~determinate $
-\end{flushright}
 
-\vspace{0.3cm}
+
 \begin{multline}
 =\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{\sin\phi\cos\gamma-\cos\phi\sin\gamma}{\sin\phi\cos\phi\sin\gamma\cos\gamma}
 \right]
 \end{multline}
-\begin{flushright}
 $\because solving ~above~equation $
-\end{flushright}
 
-\vspace{0.3cm}
+
 \begin{multline}
 =\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{4~\sin(\phi-\gamma)}{4~\sin\phi\cos\phi\sin\gamma\cos\gamma}
 \right]
 \end{multline}
-\begin{flushright}
-$\because \sin A\cos B - \sin B\cos A = \sin(A-B)$
-$~multiply ~and ~divide ~by ~4$
-\end{flushright}
 
-\vspace{0.3cm}
+$\because \sin A\cos B - \sin B\cos A=\sin(A-B)$
+$~multiply ~and ~divide ~by ~4$
+
+
 \begin{multline}
 =\frac{4ab~\sin(\theta-\phi)~\sin(\gamma-\theta)~\sin(\phi-\gamma)}{ \sin2\theta~2\sin\phi\cos\phi~2\sin\gamma\cos\gamma}
 \end{multline}
-\vspace{0.3cm}
+
 \begin{multline*}
 =\frac{4ab~\sin(\theta-\phi)~\sin(\gamma-\theta)~\sin(\phi-\gamma)}{ \sin2\theta~\sin2\phi~\sin2\gamma} = R.H.S
 \end{multline*}
-\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\
+$~~~~~~~~~~Putting ~Some ~Numerical~ Values$
 \begin{multline*}
 ~~~~~~~~\frac{4~(1*1)~\sin(60-45)~\sin(30-60)~\sin(45-30)}{ \sin2(60)~\sin2(45)~\sin2(30)}\\
 \end{multline*}
-\begin{flushright}
-$
-putting~ value~ of~a=1,~b=1 ~\theta=60\\~\phi=45 ~\gamma=30$
-\end{flushright}
+$putting~ value~ of~a=1,~b=1 ~\theta=60~\phi=45 \\ \gamma=30$
 
 \begin{multline*}
 ~~~~~~~~=\frac{-0.133974}{0.75}=-0.178632\\
