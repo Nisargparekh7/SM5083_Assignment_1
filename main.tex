@@ -7,7 +7,7 @@
 \usepackage{setspace}
 \usepackage{gensymb}
 \singlespacing
-
+\usepackage{mathtools} 
 \usepackage{amsmath}
 \usepackage{amsthm}
 \begin{document}
@@ -66,16 +66,16 @@ area~ of ~triangle=~\frac{1}{2} \mydet{
  \tan\gamma & \cot\gamma & 1 
 }
 \end{multline}
-$\because$ taking ~a~ for ~C1 ~and~ b ~from~ C2~ common 
+$\because$~taking~ common ~$ C1 \xleftrightarrow{{a}} C1$  ~and~ $C2 \xleftrightarrow{{b}} C2$
+
 \begin{multline}
 =~\frac{ab}{2}~\mydet{
  \tan\theta & \cot\theta & 1  \\ 
  \tan\phi-\tan\theta & \cot\phi-\cot\theta & 0  \\
  \tan\gamma-\tan\theta & \cot\gamma-\cot\theta & 0 
 }\end{multline}
-\begin{align*}
-\because R2=R2-R1 ~and~ R3=R3-R1
-\end{align*}
+$\because R2 \xleftrightarrow{{R2-R1}} R2$  ~and~ $R3 \xleftrightarrow{{R3-R1}} R3$
+
 
 \begin{multline}
 =~\frac{ab}{2}~\mydet{
@@ -116,24 +116,22 @@ $\because$ ~rearranging ~terms
 }
 \end{multline}
 
-$\because$ taking ~ $\frac{1}{\cos\theta},\frac{1}{\sin\theta}$~common ~from ~column~ 1 ~and~ column~2 
-
+$\because$~taking~ common ~$ C1 \xleftrightarrow{{\frac{1}{\cos\theta}}} C1$,~$C2 \xleftrightarrow{{\frac{1}{\sin\theta}}} C2$
 
 \begin{multline}
-=\frac{ab~(-\sin(\theta-\phi))~(-\sin(\gamma-\theta))}{2 \sin\theta\cos\theta}~\begin{vmatrix}
+=\frac{ab~(-\sin(\theta-\phi))~(-\sin(\gamma-\theta))}{2 \sin\theta\cos\theta}\\~\begin{vmatrix}
  {\sin\theta} & {\cos\theta} & 1  \\ 
  \frac{1}{\cos\phi} & \frac{1}{\sin\phi} & 0  \\
  \frac{1}{\cos\gamma} & \frac{1}{\sin\gamma} & 0 
 \end{vmatrix}    
 \end{multline}
 
-$\because$ taking $\sin(\theta-\phi)$~common ~from ~row ~2
-~and\\~\sin$(\gamma-\theta)$~common ~from ~row ~3
+$\because$~taking~ common ~$ R2 \xleftrightarrow{{\sin(\theta-\phi)}} R2$,\\$R3 \xleftrightarrow{{\sin(\gamma-\theta)}} R3$
 
 
 
 \begin{multline}
-=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{1}{\cos\phi\sin\gamma}-\frac{1}{\sin\phi\cos\gamma}
+=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\\\left[\frac{1}{\cos\phi\sin\gamma}-\frac{1}{\sin\phi\cos\gamma}
 \right]
 \end{multline}
 
@@ -141,19 +139,20 @@ $\because$ solving~determinate
 
 
 \begin{multline}
-=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{\sin\phi\cos\gamma-\cos\phi\sin\gamma}{\sin\phi\cos\phi\sin\gamma\cos\gamma}
+=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\\\left[\frac{\sin\phi\cos\gamma-\cos\phi\sin\gamma}{\sin\phi\cos\phi\sin\gamma\cos\gamma}
 \right]
 \end{multline}
 
 $\because$ solving ~above~equation 
 
 \begin{multline}
-=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\left[\frac{4~\sin(\phi-\gamma)}{4~\sin\phi\cos\phi\sin\gamma\cos\gamma}
+=\frac{ab~\sin(\theta-\phi)~\sin(\gamma-\theta)}{ \sin2\theta}\\\left[\frac{4~\sin(\phi-\gamma)}{4~\sin\phi\cos\phi\sin\gamma\cos\gamma}
 \right]
 \end{multline}
 
+
+$\because \sin A\cos B - \sin B\cos A=\sin(A-B)$
 \begin{align*}
-\because \sin A\cos B - \sin B\cos A=\sin(A-B)\\
 ~multiply ~and ~divide ~by ~4
 \end{align*}
 
@@ -162,12 +161,12 @@ $\because$ solving ~above~equation
 \end{multline}
 
 \begin{multline}
-=\frac{4ab~\sin(\theta-\phi)~\sin(\gamma-\theta)~\sin(\phi-\gamma)}{ \sin2\theta~\sin2\phi~\sin2\gamma} = R.H.S
+=\frac{4ab~\sin(\theta-\phi)~\sin(\gamma-\theta)~\sin(\phi-\gamma)}{ \sin2\theta~\sin2\phi~\sin2\gamma} \\= R.H.S
 \end{multline}
 \\\\
 $Putting ~Some ~Numerical~ Values$
 \begin{multline}
-~~~~~~~~\frac{4~(1~1)~\sin(60-45)~\sin(30-60)~\sin(45-30)}{ \sin2(60)~\sin2(45)~\sin2(30)}\\
+\frac{4~(1~1)~\sin(60-45)~\sin(30-60)~\sin(45-30)}{ \sin2(60)~\sin2(45)~\sin2(30)}\\
 \end{multline}
 putting~ value~ of~a=1,~b=1 $~\theta=60~\phi=45 \\ \gamma=30$
 
